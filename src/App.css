@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
-}
+body {
+  margin: 0%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #a7beae;
+  color: #b85042;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* background-color: #e7e8d1; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.gridContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  grid-template-areas: "cv hello portfolio";
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr 4fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  grid-template-areas: ". codecamp schule self .";
+}
+@media only screen and (max-width: 756px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: 10px;
+    grid-template-areas: "codecamp" "schule" "self";
+    text-align: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hello {
+  grid-area: hello;
   display: flex;
-  flex-direction: column;
+}
+.cv {
+  grid-area: cv;
+  display: flex;
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.portfolio {
+  grid-area: portfolio;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  margin-top: 70px;
+}
+img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img:hover {
+  height: 155px;
+}
+img:active {
+  height: 155px;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  height: 150px;
+  width: 169px;
+}
+a:link {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #b85042;
+}
+a:visited {
+  text-decoration: none;
+  color: #b85042;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+  color: #80433b;
+}
+a:active {
+  text-decoration: none;
+  color: #80433b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.codecamp {
+  grid-area: codecamp;
+  max-height: 300px;
+}
+.schule {
+  grid-area: schule;
+  max-height: 300px;
+}
+.self {
+  grid-area: self;
+  max-height: 300px;
+}
+
+.icons {
+  grid-area: icons;
+  font-size: 30px;
+}
+
+.border {
+  border-left: 2px solid #b85042;
+  min-height: 350px;
+  /* display: inline-block;
+  text-align: left; */
+}
+.test {
+  margin-left: 20px;
+}
+@media only screen and (max-width: 756px) {
+  .border {
+    border-left: none;
+    display: inline-block;
+    text-align: left;
+    min-height: 0px;
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  .codecamp {
+    /* max-height: 200px; */
+    display: block;
+    margin-bottom: 20px;
+    box-sizing: unset;
+  }
+  .schule {
+    /* max-height: 200px; */
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .self {
+    /* max-height: 200px; */
+    display: block;
+    margin-bottom: 20px;
+  }
+  .test {
+    margin-left: 0px;
   }
 }
