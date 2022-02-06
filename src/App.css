@@ -2,10 +2,11 @@ body {
   margin: 0%;
   height: 100vh;
   width: 100vw;
-  background-color: #a7beae;
+  /* background-color: #a7beae; */
   color: #b85042;
+  font-family: "Montserrat", sans-serif;
 
-  /* background-color: #e7e8d1; */
+  background-color: #e7e8d1;
 }
 .gridContainer {
   height: 100vh;
@@ -14,6 +15,8 @@ body {
   grid-template-rows: 1fr;
   gap: 10px;
   grid-template-areas: "cv hello portfolio";
+  max-width: 750px;
+  margin: 0 auto;
 }
 .container {
   height: 100vh;
@@ -22,6 +25,7 @@ body {
   grid-template-rows: 1fr;
   gap: 10px;
   grid-template-areas: ". codecamp schule self .";
+  width: 760px;
 }
 @media only screen and (max-width: 756px) {
   .container {
@@ -55,19 +59,37 @@ body {
   flex-direction: column;
   margin-top: 70px;
 }
+
+.portfolio:hover {
+  color: #80433b;
+  cursor: pointer;
+}
+.portfolio:active {
+  color: #80433b;
+  cursor: pointer;
+}
+.cv:hover {
+  color: #80433b;
+  cursor: pointer;
+}
+.cv:active {
+  color: #80433b;
+  cursor: pointer;
+}
+
 img {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-img:hover {
-  height: 155px;
+a img:hover {
+  box-shadow: #86988b 0px 3px 8px;
 }
-img:active {
-  height: 155px;
+a img:active {
+  box-shadow: #86988b 0px 3px 8px;
 }
 
 a {
   height: 150px;
-  width: 169px;
+  width: auto;
 }
 a:link {
   text-decoration: none;
@@ -124,23 +146,29 @@ a:active {
     width: 50%;
   }
   .codecamp {
-    /* max-height: 200px; */
+    /* max-height: 400px; */
     display: block;
     margin-bottom: 20px;
     box-sizing: unset;
   }
   .schule {
-    /* max-height: 200px; */
+    max-height: 500px;
     margin-bottom: 20px;
     display: block;
   }
 
   .self {
-    /* max-height: 200px; */
+    max-height: 500px;
     display: block;
     margin-bottom: 20px;
   }
   .test {
     margin-left: 0px;
   }
+}
+
+h4 {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }

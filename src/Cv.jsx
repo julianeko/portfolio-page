@@ -16,10 +16,12 @@ function Cv() {
         <div className="codecamp">
           <div className="border">
             <StyleH2>Freecodecamp.org</StyleH2>
+
             <div className="test">
+              <h3>Sprachen</h3>
               <div>CSS</div>
               <div>HTML</div>
-              <div>Grundlagen Javascript</div>
+              <div>JavaScript Grundlagen</div>
             </div>
           </div>
         </div>
@@ -28,14 +30,21 @@ function Cv() {
           <div className="border">
             <StyleH2>Codingschule</StyleH2>
             <div className="test">
+              <h3>Sprachen</h3>
               <div>CSS</div>
               <div>HTML</div>
-              <div>Vertiefung Javascript</div>
-              <div>React</div>
-              <div>Grundlagen Python</div>
-              <div>Grundlagen Git</div>
-              <div>express.js</div>
+              <div>JavaScript Vertiefung</div>
+              <div>Python Grundlagen</div>
+              <h3>Bibliotheken und Frameworks</h3>
+              <div>React (nur mit Function Components)</div>
+              <div>Express.js Grundlagen</div>
+              <div>Django Grundlagen</div>
+              <div>Styled Components</div>
+              <div>Tailwind Grundlagen</div>
+
+              <h3>Tools</h3>
               <div>Visual Studio Code</div>
+              <div>Git und GitHub Grundlagen</div>
             </div>
           </div>
         </div>
@@ -43,10 +52,15 @@ function Cv() {
           <div className="border">
             <StyleH2>Eigenes Projekt</StyleH2>
             <div className="test">
+              <h3>Sprachen</h3>
               <div>CSS</div>
               <div>HTML</div>
-              <div>React</div>
-              <div>Grundlagen Javascript</div>
+              <div>JavaScript</div>
+              <h3>Bibliotheken und Frameworks</h3>
+              <div>React (nur mit Function Components)</div>
+              <h3>Tools</h3>
+              <div>Visual Studio Code</div>
+              <div>Git und GitHub Grundlagen</div>
             </div>
           </div>
         </div>
@@ -57,7 +71,6 @@ function Cv() {
 
 export default Cv;
 const StyleH1 = styled.h1`
-  text-decoration: underline;
   color: #b85042;
 `;
 
