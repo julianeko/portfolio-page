@@ -15,9 +15,26 @@ body {
   grid-template-rows: 1fr;
   gap: 10px;
   grid-template-areas: "cv hello portfolio";
-  max-width: 750px;
+  max-width: 756px;
   margin: 0 auto;
+  /* overflow: scroll; */
 }
+@media only screen and (max-width: 756px) {
+  .gridContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 6.8fr;
+    gap: 10px;
+    grid-template-areas:
+      "cv portfolio"
+      "hello hello";
+    max-width: 750px;
+    margin: 0 auto;
+    /* overflow: scroll; */
+  }
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -25,7 +42,6 @@ body {
   grid-template-rows: 1fr;
   gap: 10px;
   grid-template-areas: ". codecamp schule self .";
-  width: 760px;
 }
 @media only screen and (max-width: 756px) {
   .container {
@@ -36,6 +52,26 @@ body {
     gap: 10px;
     grid-template-areas: "codecamp" "schule" "self";
     text-align: center;
+  }
+}
+.arrow {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: none;
+}
+@media only screen and (max-width: 756px) {
+  .arrow {
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 6px;
+  }
+}
+.circle {
+  display: inline-block;
+}
+@media only screen and (max-width: 756px) {
+  .circle {
+    display: none;
   }
 }
 
@@ -49,15 +85,31 @@ body {
 
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 .portfolio {
   grid-area: portfolio;
   display: flex;
   align-items: center;
-
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 100px;
+}
+@media only screen and (max-width: 756px) {
+  .portfolio {
+    margin-top: 10px;
+    flex-direction: row;
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cv {
+    margin-top: 0px;
+    flex-direction: row;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .portfolio:hover {
@@ -171,4 +223,13 @@ h4 {
   text-align: center;
   margin-top: 35px;
   margin-bottom: 10px;
+}
+
+.br {
+  display: none;
+}
+@media only screen and (max-width: 756px) {
+  .br {
+    display: inline-block;
+  }
 }

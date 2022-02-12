@@ -15,13 +15,15 @@ function Cv() {
       <DirectStyle className="container">
         <div className="codecamp">
           <div className="border">
-            <StyleH2>Freecodecamp.org</StyleH2>
+            <StyleH2>freeCodeCamp.org</StyleH2>
 
             <div className="test">
               <h3>Sprachen</h3>
-              <div>CSS</div>
-              <div>HTML</div>
-              <div>JavaScript Grundlagen</div>
+              <TextStyle>CSS</TextStyle>
+              <TextStyle>HTML</TextStyle>
+              <TextStyle>
+                JavaScript <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
             </div>
           </div>
         </div>
@@ -31,20 +33,37 @@ function Cv() {
             <StyleH2>Codingschule</StyleH2>
             <div className="test">
               <h3>Sprachen</h3>
-              <div>CSS</div>
-              <div>HTML</div>
-              <div>JavaScript Vertiefung</div>
-              <div>Python Grundlagen</div>
+              <TextStyle>CSS</TextStyle>
+              <TextStyle>HTML</TextStyle>
+              <TextStyle>
+                JavaScript <SmallStyle>(Vertiefung)</SmallStyle>
+              </TextStyle>
+              <TextStyle>
+                Python <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
               <h3>Bibliotheken und Frameworks</h3>
-              <div>React (nur mit Function Components)</div>
-              <div>Express.js Grundlagen</div>
-              <div>Django Grundlagen</div>
-              <div>Styled Components</div>
-              <div>Tailwind Grundlagen</div>
+              <TextStyle>
+                React <SmallStyle>(nur mit Function Components)</SmallStyle>
+              </TextStyle>
+              <TextStyle>
+                Express.js <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
+              <TextStyle>
+                Django <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
+              <TextStyle>Styled Components</TextStyle>
+              <TextStyle>
+                Tailwind <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
+              <TextStyle>
+                Chart.js <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
 
               <h3>Tools</h3>
-              <div>Visual Studio Code</div>
-              <div>Git und GitHub Grundlagen</div>
+              <TextStyle>Visual Studio Code</TextStyle>
+              <TextStyle>
+                Git und GitHub <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
             </div>
           </div>
         </div>
@@ -53,14 +72,18 @@ function Cv() {
             <StyleH2>Eigenes Projekt</StyleH2>
             <div className="test">
               <h3>Sprachen</h3>
-              <div>CSS</div>
-              <div>HTML</div>
-              <div>JavaScript</div>
+              <TextStyle>CSS</TextStyle>
+              <TextStyle>HTML</TextStyle>
+              <TextStyle>JavaScript</TextStyle>
               <h3>Bibliotheken und Frameworks</h3>
-              <div>React (nur mit Function Components)</div>
+              <TextStyle>
+                React <SmallStyle>(nur mit Function Components)</SmallStyle>
+              </TextStyle>
               <h3>Tools</h3>
-              <div>Visual Studio Code</div>
-              <div>Git und GitHub Grundlagen</div>
+              <TextStyle>Visual Studio Code</TextStyle>
+              <TextStyle>
+                Git und GitHub <SmallStyle>(Grundlagen)</SmallStyle>
+              </TextStyle>
             </div>
           </div>
         </div>
@@ -70,8 +93,16 @@ function Cv() {
 }
 
 export default Cv;
+const SmallStyle = styled.span`
+  font-size: 12px;
+  margin: 0;
+`;
 const StyleH1 = styled.h1`
   color: #b85042;
+`;
+const TextStyle = styled.p`
+  font-size: 15px;
+  margin: 0;
 `;
 
 const StyleH2 = styled.h2`

@@ -33,10 +33,10 @@ function Portfolio() {
               />
             </a>
 
-            <p>
+            <TextStyle>
               <a href="https://jsbdayreminder.netlify.app/">App</a> |{" "}
               <a href="https://github.com/julianeko/bdayapp">Code</a>
-            </p>
+            </TextStyle>
           </CStyle3>
         </CampStyle>
       </CenterStyle>
@@ -49,11 +49,11 @@ function Portfolio() {
           <CStyle2>
             <img
               src={talkidoocrop}
-              alt="Screenshot of the To-Do-App"
+              alt="Screenshot of the Messanger-App"
               width="auto"
               height="150px"
             />
-            <p>
+            <TextStyle>
               <a href="https://github.com/julianeko/TalkiDoo/tree/julianesbranch">
                 Frontend Code
               </a>
@@ -61,7 +61,7 @@ function Portfolio() {
               <a href="https://github.com/julianeko/codingschule_backend_exercise">
                 Backend Code
               </a>
-            </p>
+            </TextStyle>
           </CStyle2>
           <CStyle3>
             <a href="https://flamboyant-haibt-1b2c76.netlify.app/">
@@ -72,17 +72,17 @@ function Portfolio() {
                 height="150px"
               />
             </a>
-            <p>
+            <TextStyle>
               <a href="https://flamboyant-haibt-1b2c76.netlify.app/">App</a> |{" "}
               <a href="https://github.com/julianeko/apptopublish">Code</a>
-            </p>
+            </TextStyle>
           </CStyle3>
         </SchoolStyle>
       </CenterStyle>
       <CenterStyle>
         <h3>
           Beispielprojekte{" "}
-          <a href="https://www.freecodecamp.org">freecodecamp.org</a>
+          <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
         </h3>
         <CampStyle>
           <CStyle2>
@@ -94,13 +94,13 @@ function Portfolio() {
                 height="150px"
               />
             </a>
-            <p>
+            <TextStyle>
               <a href="https://julianeko.github.io/myfreecodecamptry/portfoliopage/portfoliopage.html">
                 Homepage
               </a>{" "}
               |{" "}
               <a href="https://github.com/julianeko/myfreecodecamptry">Code</a>
-            </p>
+            </TextStyle>
           </CStyle2>
         </CampStyle>
       </CenterStyle>
@@ -109,6 +109,10 @@ function Portfolio() {
 }
 
 export default Portfolio;
+const TextStyle = styled.p`
+  font-size: 15px;
+  margin-top: 17px;
+`;
 const CenterStyle = styled.div`
   text-align: center;
 `;
