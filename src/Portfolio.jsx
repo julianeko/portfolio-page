@@ -54,7 +54,7 @@ function Portfolio() {
               height="150px"
             />
             <TextStyle>
-              <a href="https://github.com/julianeko/TalkiDoo/tree/julianesbranch">
+              <a href="https://github.com/julianeko/TalkiDoo-Frontend">
                 Frontend Code
               </a>
               <br />
