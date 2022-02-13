@@ -31,6 +31,8 @@ body {
       "hello hello";
     max-width: 750px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     /* overflow: scroll; */
   }
 }
@@ -231,5 +233,17 @@ h4 {
 @media only screen and (max-width: 756px) {
   .br {
     display: inline-block;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 756px) {
+  .sticky {
+    position: static;
   }
 }

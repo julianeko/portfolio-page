@@ -17,13 +17,15 @@ function Start() {
       <div>
         <div className="gridContainer">
           <div className="cv" onClick={() => navigate("/cv/")}>
-            <div className="circle">
-              <Circleleft />
-            </div>
             <span className="arrow">
               <BsArrowLeftShort />
             </span>
-            <p>Training</p>
+            <div className="sticky">
+              <div className="circle">
+                <Circleleft />
+              </div>
+              <p>Training</p>
+            </div>
           </div>
           <div className="hello">
             <TextStyle>
@@ -49,7 +51,7 @@ function Start() {
               <a href="https://jsbdayreminder.netlify.app/">
                 eigene Web App
               </a>{" "}
-              erstellt. Auch dieses ist im{" "}
+              erstellt. Auch diese ist im{" "}
               <a href="/portfolio/">Portfolio-Bereich</a> zu finden.
               Abgeschlossen ist mein eigenes Projekt noch nicht; ich arbeite
               fortlaufend daran.
@@ -59,15 +61,20 @@ function Start() {
               sehr viel lernen. Aus diesem Grund bin ich auf der Suche nach
               einer passenden Einsteigerstelle bei der ich mich bereits
               produktiv einbringen und gleichzeitig in Vollzeit meine
-              Programmierkenntnisse weiter aufbauen kann. Gerne komme ich vorab
-              auch zu einem Probearbeiten.
+              Programmierkenntnisse weiter aufbauen kann. Ob Junior-Stelle,
+              Trainee oder Praktikum – um den beruflichen Einstieg in die
+              Webentwicklung zu erlangen, bin ich für alles offen. Gerne komme
+              ich vorab auch zu einem Probearbeiten.
             </TextStyle>
           </div>
+
           <div className="portfolio" onClick={() => navigate("/portfolio/")}>
-            <div className="circle">
-              <Circleright />
+            <div className="sticky">
+              <div className="circle">
+                <Circleright />
+              </div>
+              <p>Portfolio</p>
             </div>
-            <p>Portfolio</p>
             <span className="arrow">
               <BsArrowRightShort />
             </span>
@@ -86,6 +93,7 @@ const TextStyle = styled.div`
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
+    
 `;
 const Circleleft = styled(BsArrowLeftCircleFill)`
   font-size: 30px;
