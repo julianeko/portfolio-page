@@ -149,13 +149,15 @@ const SchoolStyle = styled.div`
   }
 `;
 const HeaderStyle = styled.div`
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
 `;
 const HomeStyle = styled(MdHome)`
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 20px;
+  margin-left: 20px;
+  font-size: 30px;
   color: #b85042;
   &:hover {
     color: #80433b;
